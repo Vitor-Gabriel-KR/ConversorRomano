@@ -1,9 +1,16 @@
 <template>
   <div>
+<<<<<<< HEAD
     <InputField v-model="inputValue" @input="convertAutomatically" />
     <br>
     <button @click="convert">Converter</button>
     <OutputField :resultValue="result" />
+=======
+    <InputField v-model="romanNumber" />
+    <br>
+    <button @click="convert">Converter</button>
+    <OutputField :resultValue="decimalResult" />
+>>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
   </div>
 </template>
 
@@ -15,12 +22,18 @@ export default {
   components: { InputField, OutputField },
   data() {
     return {
+<<<<<<< HEAD
       inputValue: '',
       result: ''
+=======
+      romanNumber: '',
+      decimalResult: ''
+>>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
     };
   },
   methods: {
     convert() {
+<<<<<<< HEAD
       if (this.isRoman(this.inputValue)) {
         this.result = this.romanToDecimal(this.inputValue);
       } else if (this.isDecimal(this.inputValue)) {
@@ -42,13 +55,21 @@ export default {
     },
     isDecimal(str) {
       return /^\d+$/.test(str);
+=======
+      this.decimalResult = this.romanToDecimal(this.romanNumber);
+>>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
     },
     romanToDecimal(roman) {
       const romanMap = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
       let total = 0;
       for (let i = 0; i < roman.length; i++) {
+<<<<<<< HEAD
         const current = romanMap[roman[i].toUpperCase()];
         const next = romanMap[roman[i + 1]?.toUpperCase()];
+=======
+        const current = romanMap[roman[i]];
+        const next = romanMap[roman[i + 1]];
+>>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
         if (next && current < next) {
           total -= current;
         } else {
@@ -56,6 +77,7 @@ export default {
         }
       }
       return total || 'Erro: Entrada inválida';
+<<<<<<< HEAD
     },
     decimalToRoman(decimal) {
       const val = [
@@ -86,3 +108,9 @@ export default {
   }
 };
 </script>
+=======
+    }
+  }
+};
+</script>
+>>>>>>> d32e85e6696630a450f59970826488364dd8e6b1

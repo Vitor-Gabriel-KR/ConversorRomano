@@ -18,4 +18,8 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
 }
+<<<<<<< HEAD
 </style>
+=======
+</style>
+>>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
