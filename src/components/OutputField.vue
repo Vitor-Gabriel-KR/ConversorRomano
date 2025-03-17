@@ -14,12 +14,16 @@ export default {
 </script>
 
 <style scoped>
-p {
-  font-size: 20px;
-  font-weight: bold;
+h3 {
+  color: #6c757d;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
-<<<<<<< HEAD
+
+p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #28a745;
+  margin: 0;
+}
 </style>
-=======
-</style>
->>>>>>> d32e85e6696630a450f59970826488364dd8e6b1

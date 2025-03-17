@@ -1,6 +1,5 @@
 <template>
   <div>
-<<<<<<< HEAD
     <label for="input">Digite um Número Romano ou Decimal:</label>
     <input
       id="input"
@@ -8,15 +7,6 @@
       v-model="inputValue"
       @input="updateValue"
       placeholder="Digite um número romano ou decimal..."
-=======
-    <label for="roman-input">Digite um Número Romano:</label>
-    <input
-      id="roman-input"
-      type="text"
-      v-model="romanNumber"
-      @input="updateValue"
-      placeholder="Digite um número romano..."
->>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
     />
   </div>
   <label class="hints">Números romanos podem ser: I, V, X, L, C, D, M</label>
@@ -28,11 +18,7 @@ export default {
     modelValue: String
   },
   computed: {
-<<<<<<< HEAD
     inputValue: {
-=======
-    romanNumber: {
->>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
       get() {
         return this.modelValue;
       },
@@ -42,14 +28,9 @@ export default {
     }
   },
   methods: {
-<<<<<<< HEAD
     updateValue(event) {
       this.$emit('update:modelValue', event.target.value.toUpperCase());
       this.$emit('input', event);
-=======
-    updateValue() {
-      this.$emit('update:modelValue', this.romanNumber);
->>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
     }
   }
 };
@@ -57,19 +38,24 @@ export default {
 
 <style scoped>
 input {
-  padding: 8px;
-  font-size: 13px;
-  width: 200px;
+  padding: 10px 12px;
+  border: 2px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
   text-transform: uppercase;
 }
+
+input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
 .hints {
-  font-size: 12px;
-  color: #888;
+  font-size: 0.75rem;
+  color: #6c757d;
   margin-top: 4px;
   display: block;
 }
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> d32e85e6696630a450f59970826488364dd8e6b1
