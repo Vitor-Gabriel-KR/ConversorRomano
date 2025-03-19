@@ -7,6 +7,9 @@ O **ConversorRomano** é uma aplicação web desenvolvida para converter número
 - **Vue 3**: Utilizei para desenvolver o front-end.
 - **Vite**: É uma excelente ferramenta para trabalhar com Vue, oferecendo desempenho e agilidade
 - **JavaScript** : Utilizei essa linguagem para escrever os códigos de Conversão do projeto.
+- 
+## Pre-Requisitos
+- [Node.js v23.5.0 +](https://nodejs.org)
 
 ## Passos para Executar o Projeto
 
